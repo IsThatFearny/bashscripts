@@ -1,2 +1,0 @@
-#!/bin/bash
-lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
