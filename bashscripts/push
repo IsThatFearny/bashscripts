@@ -11,26 +11,18 @@ __/\\\\\\\\\\\\\_______________________________/\\\_____________________________
        _\/\\\_____________\//\\\\\\\\\___/\\\\\\\\\\_\/\\\___\/\\\______________\//\\\\\____\///\\\\\/_____________\//\\\\\\\\\\\\/___/\\\\\\\\\\\_______\/\\\_______ 
         _\///_______________\/////////___\//////////__\///____\///________________\/////_______\/////________________\////////////____\///////////________\///________
 
-
-1) Manuals
-2) Bash Scripts
-
 EOF
-ssh -T git@github.com
-echo -n "Enter the number of the repo you want to push to: "
-read VAR
-
-if [[ $VAR -gt 1 ]]
-then
-  cd Manuals
+  ssh -T git@github.com
+  cd /home/will/Manuals
+  git add /home/will/Manuals/Manuals
   git add .
   git commit -m "New Document Added"
   git push
-else
-  cd bashscripts
+
+  cd /home/will/bashscripts
+  git add /home/will/bashscripts/bashscripts
   git add .
   git commit -m "New Script Added"
-  git push  
-fi
+  git push
 
 
