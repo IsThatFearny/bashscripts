@@ -1,0 +1,6 @@
+#!/bin/sh
+for LINE in `cat /home/will/resolveips.txt`
+do
+  echo "Got [$LINE]"
+  nslookup $LINE
+done
