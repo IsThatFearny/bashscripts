@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "What word would you like to search for?: " input
+find -type f -name '*$input*' -delete
