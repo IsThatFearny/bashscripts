@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo grep -rni --color=auto $1 *
+
