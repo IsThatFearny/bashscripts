@@ -1,3 +1,2 @@
 #!/bin/bash
-read -p "Which port would you like to check?: " input
-sudo netstat -ltnp | grep -w $input
+sudo netstat -ltnp | grep -w $1
