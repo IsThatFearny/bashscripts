@@ -1,4 +1,4 @@
 #!/bin/bash
 read -p "Which script do you want to copy?: " input
-sudo cp $input /home/will/bashscripts/bashscripts
+sudo cp /usr/local/bin/$input /home/will/bashscripts/bashscripts
 
