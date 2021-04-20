@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $1=".bashrc" ]]
+then
+   sudo sed -i '$d' /home/will/.bashrc
+   . ~/.bashrc
+else
+   sudo sed -i '$d' $1
+fi
