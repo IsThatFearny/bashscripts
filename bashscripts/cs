@@ -1,3 +1,15 @@
 #!/bin/bash
 cd $1
+if [[ "$1" = "/home/will/backups" ]]; then
+cat << "EOF"
+Certain files need to be hidden when copying back to original directory, such as bashrc. Make sure that you put a . in front of them before or after copying to hide them.
+
+ALWAYS USE VISUDO WHEN EDITING SUDOERS OR SUDOERS.D!!!
+
+EOF
+
+else
+cd $1 2>/dev/null
+fi
+
 ls
