@@ -1,3 +1,6 @@
 #!/bin/bash
 echo $1 >> ~/.bashrc
 . ~/.bashrc
+sudo cp ~/.bashrc ~/backups
+mv ~/backups/.bashrc ~/backups/bashrc
+ 
