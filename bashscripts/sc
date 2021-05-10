@@ -1,3 +1,16 @@
 #!/bin/bash
-sudo cp /usr/local/bin/$1 /home/will/bashscripts/bashscripts
 
+cat << "EOF"
+
+1) Prototype Scripts
+2) Bash scripts
+
+EOF
+
+read -p "Pick your directory: " input
+if [[ "$input" = "2" ]]
+then
+   sudo cp /usr/local/bin/$1 /home/will/bashscripts/bashscripts
+else
+   sudo cp /usr/local/bin/$1 /home/will/prscripts/
+fi
