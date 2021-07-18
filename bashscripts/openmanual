@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ~/repos/Manuals/Manuals
+ls > ~/temp.txt
+nl ~/temp.txt
+read -p "Choose a manual to open: " input
+sed -n "$input"p ~/temp.txt > ~/temp2.txt
+xclip ~/temp2.txt
+var=$(xclip -o)
+sudo nano "$var"
