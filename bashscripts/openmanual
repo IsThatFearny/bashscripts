@@ -8,3 +8,5 @@ sed -n "$input"p ~/temp.txt > ~/temp2.txt
 xclip ~/temp2.txt
 var=$(xclip -o)
 sudo nano "$var"
+rm ~/temp.txt
+rm ~/temp2.txt
